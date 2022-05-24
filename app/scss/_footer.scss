@@ -4,14 +4,18 @@
     padding: 2.5rem;
     text-align: center;
 
-    @include breakpoint-up(large) {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr) 2fr;
-        grid-template-rows: repeat 1fr auto;
-        grid-template-areas:
-            "logo links1 links2 cta"
-            "social links1 links2 copyright";
-        justify-items: start;
+    .container {
+        @include breakpoint-up(large) {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 3fr;
+            grid-template-rows: repeat 1fr auto;
+            grid-template-areas:
+                "logo links1 links2 cta"
+                "social links1 links2 copyright";
+                gap: 1rem;
+            justify-items: start;
+        }
+
     }
 
     a {
@@ -20,6 +24,7 @@
 
     &__logo {
         display: inline-block;
+        height: 1.25rem;
 
         @include breakpoint-down(medium) {
             margin-bottom: 1.875rem;
@@ -43,10 +48,11 @@
 
         a {
             display: inline-block;
+            height: 1.25rem;
         }
 
         a:not(:last-child) {
-            margin-right: 1rem;
+            margin-right: 0.55rem;
         }
     }
 
@@ -59,7 +65,7 @@
         @include breakpoint-up(large) {
             justify-content: space-between;
             align-items: flex-start;
-            
+
         }
 
         &.col1 {
@@ -81,10 +87,13 @@
         }
 
         a {
-            @include breakpoint-down(medium){
-                line-height: 2.25;
+            line-height: 2.25;
+            transition: color 100ms ease-in-out;
+
+            &:hover {
+               color: $limegreen;
             }
-           
+
         }
     }
 
@@ -106,8 +115,9 @@
 
     &__copyright {
         font-size: 0.8125rem;
+        color: $grayishBlue;
 
-        @include breakpoint-up(large){
+        @include breakpoint-up(large) {
             grid-area: copyright;
             align-self: flex-end;
             justify-self: end;
