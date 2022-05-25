@@ -10,7 +10,7 @@
         "../app/scss/_header.scss",
         "../app/scss/_hero.scss",
         "../app/scss/_feature.scss",
-        "../app/scss/_article.scss",
+        "../app/scss/portfolio.scss",
         "../app/scss/_contact.scss",
         "../app/scss/_footer.scss"
     ],
