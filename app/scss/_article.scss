@@ -1,9 +1,9 @@
-.articles {
+.portfolios {
     background-color: $veryLightGray;
 
 }
 
-.article {
+.portfolio {
 
     &__content {
 
@@ -40,7 +40,6 @@
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center center;
-
     }
 
     &__text {
@@ -52,7 +51,7 @@
         }
     }
 
-    &__author {
+    &__type {
         font-size: 0.625rem;
         margin-bottom: 0.75rem;
     }

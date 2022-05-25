@@ -271,6 +271,10 @@ button:hover,
   }
 }
 
+#portrait {
+  background-position: center 35%;
+}
+
 .header {
   position: relative;
   z-index: 1;
@@ -566,11 +570,11 @@ button:hover,
   line-height: 1.5;
 }
 
-.articles {
+.portfolios {
   background-color: #fafafa;
 }
 
-.article__grid {
+.portfolio__grid {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr;
@@ -579,20 +583,20 @@ button:hover,
 }
 
 @media (min-width: 40em) {
-  .article__grid {
+  .portfolio__grid {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (min-width: 64em) {
-  .article__grid {
+  .portfolio__grid {
     -ms-grid-columns: (1fr)[4];
         grid-template-columns: repeat(4, 1fr);
   }
 }
 
-.article__item {
+.portfolio__item {
   background-color: white;
   border-radius: 0.3125rem;
   overflow: hidden;
@@ -602,42 +606,42 @@ button:hover,
   transition: all 150ms ease-in-out;
 }
 
-.article__item:hover {
+.portfolio__item:hover {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
 }
 
-.article__image {
+.portfolio__image {
   height: 12.5rem;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
 }
 
-.article__text {
+.portfolio__text {
   color: #9698a6;
   padding: 1.875rem 1.875rem 2.5rem 1.875rem;
 }
 
 @media (min-width: 40em) {
-  .article__text {
+  .portfolio__text {
     padding: 1.875rem 1.5625rem;
   }
 }
 
-.article__author {
+.portfolio__type {
   font-size: 0.625rem;
   margin-bottom: 0.75rem;
 }
 
-.article__title {
+.portfolio__title {
   color: #0d0d0d;
   font-size: 1.0625rem;
   line-height: 1.2;
   margin-bottom: 0.5rem;
 }
 
-.article__description {
+.portfolio__description {
   font-size: 0.8125rem;
 }
 
