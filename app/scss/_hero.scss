@@ -11,7 +11,7 @@
 
     &__image {
         position: relative;
-        background-image: url(../images/bg-intro-mobile.svg);
+        background-image: url(../images/bg-hero-mobile.svg);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center center;
@@ -27,7 +27,7 @@
             order: 2;
             height: 41rem;
             background-image: none;
-            //background-image: url(../images/bg-intro-desktop.svg);
+            //background-image: url(../images/bg-hero-desktop.svg);
             //background-position: left center;
         }
 
@@ -38,7 +38,7 @@
                 content: "";
                 position: absolute;
                 height: 100%;
-                background-image: url(../images/bg-intro-desktop.svg);
+                background-image: url(../images/bg-hero-desktop.svg);
                 background-repeat: no-repeat;
                 background-position: center bottom;
                 width: 150%;
@@ -52,21 +52,24 @@
             position: absolute;
             height: 100%;
             width: 100%;
-            background-image: url(../images/image-mockups.png);
-            background-size: 93%;
+            background-image: url(../images/hero-portrait.svg);
+            background-size: 69%;
             background-repeat: no-repeat;
-            background-position: center bottom;
+            background-position: 50% 40%;
 
             @include breakpoint-up(medium) {
-                background-size: 52%;
+                background-size: 45%;
+                background-position: center 40%;
+                height: 100%;
+                width: 100%;
             }
 
             @include breakpoint-up(large) {
-                width: 120%;
-                height: 122%;
-                background-size: 94%;
-                background-position: center 150%;
-                left: 22%;
+                height: 125%;
+                width: 100%;
+                background-size: 100%;
+                background-position: inherit;
+                
             }
         }
     }
