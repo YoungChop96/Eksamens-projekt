@@ -284,6 +284,33 @@ button:hover,
   height: 100%;
 }
 
+#chatlecover {
+  background-size: 110%;
+  background-position: center 10%;
+}
+
+#fairwinds {
+  background-size: 90%;
+}
+
+#cleansneakscover {
+  background-position: 60% center;
+}
+
+#smokey {
+  background-position: 60% center;
+}
+
+#fbposter {
+  background-position: center 16%;
+  background-size: 100%;
+}
+
+#wireframepc {
+  background-position: center 0%;
+  background-size: 100%;
+}
+
 .header {
   position: relative;
   z-index: 1;
