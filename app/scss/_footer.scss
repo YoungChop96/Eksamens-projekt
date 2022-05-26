@@ -1,5 +1,5 @@
 .footer {
-    background-color: $limegreen;
+    background-color: $azure;
     color: $white;
     padding: 2.5rem;
     text-align: center;
@@ -7,13 +7,13 @@
     .container {
         @include breakpoint-up(large) {
             display: grid;
-            grid-template-columns: 2fr 1fr 1fr 3fr;
+            grid-template-columns: 2fr 1fr 1fr 2fr;
             grid-template-rows: repeat 1fr auto;
             grid-template-areas:
                 "logo links1 links2 cta"
                 "social links1 links2 copyright";
                 gap: 1rem;
-            justify-items: start;
+            justify-items: center;
         }
 
     }
@@ -61,10 +61,11 @@
         flex-direction: column;
         align-items: center;
         font-size: 0.9375rem;
+        color: hsl (80, );
 
         @include breakpoint-up(large) {
             justify-content: space-between;
-            align-items: flex-start;
+            align-items: center;
 
         }
 
@@ -91,25 +92,9 @@
             transition: color 100ms ease-in-out;
 
             &:hover {
-               color: $limegreen;
+               color: $offblack;
             }
 
-        }
-    }
-
-    &__cta {
-
-        @include breakpoint-up(large) {
-            grid-area: cta;
-            text-align: right;
-            justify-self: end;
-        }
-
-        a.button {
-
-            @include breakpoint-down(medium) {
-                margin-bottom: 1.875rem;
-            }
         }
     }
 
@@ -120,7 +105,6 @@
         @include breakpoint-up(large) {
             grid-area: copyright;
             align-self: flex-end;
-            justify-self: end;
         }
     }
 

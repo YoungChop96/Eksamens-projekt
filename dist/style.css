@@ -734,13 +734,13 @@ button:hover,
   .footer .container {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 2fr 1fr 1fr 3fr;
-        grid-template-columns: 2fr 1fr 1fr 3fr;
+    -ms-grid-columns: 2fr 1fr 1fr 2fr;
+        grid-template-columns: 2fr 1fr 1fr 2fr;
     -ms-grid-rows: repeat 1fr auto;
         grid-template-rows: repeat 1fr auto;
         grid-template-areas: "logo links1 links2 cta" "social links1 links2 copyright";
     gap: 1rem;
-    justify-items: start;
+    justify-items: center;
   }
 }
 
@@ -800,6 +800,7 @@ button:hover,
       -ms-flex-align: center;
           align-items: center;
   font-size: 0.9375rem;
+  color: hsl 80;
 }
 
 @media (min-width: 64em) {
@@ -807,9 +808,9 @@ button:hover,
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -838,22 +839,7 @@ button:hover,
 }
 
 .footer__links a:hover {
-  color: #0b8dc1;
-}
-
-@media (min-width: 64em) {
-  .footer__cta {
-    grid-area: cta;
-    text-align: right;
-    -ms-grid-column-align: end;
-        justify-self: end;
-  }
-}
-
-@media (max-width: 63.9375em) {
-  .footer__cta a.button {
-    margin-bottom: 1.875rem;
-  }
+  color: #0d0d0d;
 }
 
 .footer__copyright {
@@ -866,8 +852,6 @@ button:hover,
     grid-area: copyright;
     -ms-flex-item-align: end;
         align-self: flex-end;
-    -ms-grid-column-align: end;
-        justify-self: end;
   }
 }
 /*# sourceMappingURL=style.css.map */
