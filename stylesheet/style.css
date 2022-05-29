@@ -622,14 +622,12 @@ button:hover,
 
 @media (min-width: 40em) {
   .portfolio__grid {
-    -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (min-width: 64em) {
   .portfolio__grid {
-    -ms-grid-columns: (1fr)[4];
         grid-template-columns: repeat(4, 1fr);
   }
 }
@@ -763,9 +761,10 @@ button:hover,
     display: grid;
     -ms-grid-columns: 2fr 1fr 1fr 2fr;
         grid-template-columns: 2fr 1fr 1fr 2fr;
-    -ms-grid-rows: repeat 1fr auto;
-        grid-template-rows: repeat 1fr auto;
-        grid-template-areas: "logo links1 links2 cta" "social links1 links2 copyright";
+    -ms-grid-rows: 1fr auto;
+        grid-template-rows: 1fr auto;
+        grid-template-areas: "logo links1 links2 cta"
+ "social links1 links2 copyright";
     gap: 1rem;
     justify-items: center;
   }
@@ -827,7 +826,7 @@ button:hover,
       -ms-flex-align: center;
           align-items: center;
   font-size: 0.9375rem;
-  color: hsl 80;
+  color: white;
 }
 
 @media (min-width: 64em) {
@@ -881,4 +880,3 @@ button:hover,
         align-self: flex-end;
   }
 }
-/*# sourceMappingURL=style.css.map */
