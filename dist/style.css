@@ -311,6 +311,20 @@ button:hover,
   background-size: 100%;
 }
 
+#graylink {
+  color: #9698a6;
+}
+
+#footerlinks {
+  height: 1.25rem;
+  width: 1.25rem;
+}
+
+#iconsize {
+  height: 5rem;
+  width: 5rem;
+}
+
 .header {
   position: relative;
   z-index: 1;
@@ -609,7 +623,7 @@ button:hover,
 }
 
 .portfolios {
-  background-color: #fafafa;
+  background-color: #f3f4f6;
 }
 
 .portfolio__grid {
@@ -763,8 +777,8 @@ button:hover,
     display: grid;
     -ms-grid-columns: 2fr 1fr 1fr 2fr;
         grid-template-columns: 2fr 1fr 1fr 2fr;
-    -ms-grid-rows: repeat 1fr auto;
-        grid-template-rows: repeat 1fr auto;
+    -ms-grid-rows: 1fr auto;
+        grid-template-rows: 1fr auto;
         grid-template-areas: "logo links1 links2 cta" "social links1 links2 copyright";
     gap: 1rem;
     justify-items: center;
@@ -827,7 +841,7 @@ button:hover,
       -ms-flex-align: center;
           align-items: center;
   font-size: 0.9375rem;
-  color: hsl 80;
+  color: white;
 }
 
 @media (min-width: 64em) {
