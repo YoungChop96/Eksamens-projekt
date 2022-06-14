@@ -4,6 +4,7 @@ window.onload = function () {
     const header = document.querySelector('.header');
     const overlay = document.querySelector('.overlay');
     const fadeElements = document.querySelectorAll('.has-fade')
+    const hbmenu = document.querySelector ('#hbmenu')
 
     btnHamburger.addEventListener('click', function () {
         console.log('click hamburger');
@@ -30,4 +31,21 @@ window.onload = function () {
         }
 
     });
+
+    hbmenu.addEventListener('click', function () {
+        console.log('click hb link');
+
+
+        if (header.classList.contains('open')) { // Close Hamburger menu
+            body.classList.remove('noscroll');
+            header.classList.remove('open');
+            fadeElements.forEach(function(element){
+            element.classList.remove('fade-in');
+            element.classList.add('fade-out');
+            });
+
+        }
+
+    });
+
 };
