@@ -4,20 +4,18 @@
 
 .portfolio {
 
-    &__content {
-
-    }
+    &__content {}
 
     &__grid {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 1.875rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1.875rem;
 
-        @include breakpoint-up(medium){
-            grid-template-columns: repeat(2, 1fr)
+        @include breakpoint-up (medium) {
+            grid-template-columns: repeat(2, 1fr);
         }
 
-        @include breakpoint-up(large){
+        @include breakpoint-up (large) {
             grid-template-columns: repeat(4, 1fr);
         }
     }
@@ -45,7 +43,7 @@
         color: $grayishBlue;
         padding: 1.875rem 1.875rem 2.5rem 1.875rem;
 
-        @include breakpoint-up(medium){
+        @include breakpoint-up(medium) {
             padding: 1.875rem 1.5625rem;
         }
     }
@@ -66,15 +64,50 @@
     &__description {
         font-size: 0.8125rem;
     }
-    
+
 }
 
 .portfolio1 {
-    
-    &__item {
-    background: limegreen;
-    width: 350px;
-    object-fit: cover;
+    background-color: hsl(0, 0%, 98%);
+    padding: 2.1875rem;
+
+    &__backbutton {
+        display: flex;
+        margin: auto;
+        margin-bottom: 2.1875rem;
+        justify-content: space-around;
+        width: fit-content;
     }
 
+    &__item {
+        display: flex;
+        height: auto;
+        width: 100%;
+        max-width: 40rem;
+        object-fit: cover;
+        margin: auto;
+        border-radius: 0.3125rem;
+        overflow: hidden;
+        box-shadow: 0px 3px 12px rgba($color: #000000, $alpha: 0.15);
+
+        @include breakpoint-up(medium) {
+            display: flex;
+            height: auto;
+            width: 100%;
+            max-width: 60rem;
+            object-fit: cover;
+            margin: auto;
+        }
+
+        @include breakpoint-up(large) {
+            display: flex;
+            height: auto;
+            max-height: 40rem;
+            width: 100%;
+            max-width: 30rem;
+            object-fit: cover;
+            margin: auto;
+        }
+
+    }
 }
