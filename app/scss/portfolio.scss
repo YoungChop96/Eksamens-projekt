@@ -68,3 +68,13 @@
     }
     
 }
+
+.portfolio1 {
+    
+    &__item {
+    background: limegreen;
+    width: 350px;
+    object-fit: cover;
+    }
+
+}

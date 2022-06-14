@@ -697,6 +697,11 @@ button:hover,
   font-size: 0.8125rem;
 }
 
+.portfolio1__item {
+  background: limegreen;
+  width: 350px;
+}
+
 .contact {
   background-color: #f3f4f6;
   text-align: center;
@@ -779,7 +784,8 @@ button:hover,
         grid-template-columns: 2fr 1fr 1fr 2fr;
     -ms-grid-rows: 1fr auto;
         grid-template-rows: 1fr auto;
-        grid-template-areas: "logo links1 links2 cta" "social links1 links2 copyright";
+        grid-template-areas: "logo links1 links2 cta"
+ "social links1 links2 copyright";
     gap: 1rem;
     justify-items: center;
   }
