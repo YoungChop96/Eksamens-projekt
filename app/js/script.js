@@ -36,7 +36,7 @@ window.onload = function () {
         console.log('click hb link');
 
 
-        if (header.classList.contains('open')) { // Close Hamburger menu
+        if (header.classList.contains('open')) { // Close Hamburger menu on link
             body.classList.remove('noscroll');
             header.classList.remove('open');
             fadeElements.forEach(function(element){
